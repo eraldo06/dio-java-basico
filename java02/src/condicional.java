@@ -15,5 +15,18 @@ public class condicional {
         String resultado = a==b ?"VERDADEIRO" : "FALSO";
 
         System.err.println(resultado);
+
+
+
+
+         /*
+         .equals para objeto
+        */
+        String nomeUM = "ERALDO";
+        String nomeDois = new String("ERALDO");
+
+        System.out.println(nomeUM.equals(nomeDois));
+
+       
     }
 }
