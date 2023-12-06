@@ -4,6 +4,7 @@ public class BreakContinue {
             if(n==3)
             continue;
             System.out.println(n);
+        }
             
             /*
             1
@@ -22,5 +23,5 @@ public class BreakContinue {
             2
              */
         }
-    }
+    
 }
