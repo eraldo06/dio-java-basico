@@ -7,7 +7,7 @@ public class While {
 
         while(mesada>0){
             Double valorDoce = valorAleatorio();
-            if(valorDoce>mesada)
+            if(valorDoce>mesada) // esse if é só para a conta não ficar negativa
             valorDoce=mesada;
 
             System.out.println("doce do valor: "+valorDoce+" adicionado no carrinho");
