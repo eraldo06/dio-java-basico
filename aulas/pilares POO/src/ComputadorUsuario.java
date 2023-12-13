@@ -1,17 +1,19 @@
 public class ComputadorUsuario {
     public static void main(String[] args) {
-        MSS msn = new MSS();
+        SevicoMsn smi = null;
 
-        msn.enviarMensagem();
-        msn.rebecerMesagem();
+        String appEscolhido="MSS";
 
-        Facebook fmsn = new Facebook();
-        fmsn.enviarMensagem();
-        fmsn.rebecerMesagem();
+        if(appEscolhido.equals("MSS"))
+        smi = new MSS();
+        else if(appEscolhido.equals("FACEBOOK"))
+        smi = new Facebook();
+        else if(appEscolhido.equals("TELEGRAM"))
+        smi = new Telegram();
 
-        Telegram tmns = new Telegram();
-        tmns.enviarMensagem();
-        tmns.rebecerMesagem();
+        smi.enviarMensagem();
+        smi.rebecerMesagem();
+        
 
 
 
